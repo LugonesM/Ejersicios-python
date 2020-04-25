@@ -43,5 +43,5 @@ else:
    print(answer1.format(a,b, (a/b)))
    print(" And "+ str(a) + " // " + str(b) + " = " + str(a//b))  
 #Or you can use function str() to convert the intergers into strings
-   print("Here you can't write using this format <<\"string\",interger,\"char\" this gives ERROR.")
+   print("Here you can't write using this format <<\"string\",interger,\"char\">> this gives ERROR.")
  
