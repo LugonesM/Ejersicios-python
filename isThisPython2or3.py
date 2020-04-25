@@ -22,20 +22,26 @@ if type(c) == int :
     print(" To use / vs // correctly you need to put : <<from __future__ import division>> at beguining of file")
     print(" Without it, when you divide two \" ints \" the result is always another \" int \" ")
     
-    print(" And "+ str(a) + " / " + str(b) + " = " + str(a//b))    #only works in python2:  print" Like ",a," / ",b, " = ",(a//b)
-    print(" And "+ str(a) + " // " + str(b) + " = " + str(a/b))    #only works in python2:   print" And ",a," // ",b," = ",(a/b)
+    print(" And "+ str(a) + " / " + str(b) + " = " + str(a//b))   
+    #only works in python2:  print" Like ",a," / ",b, " = ",(a//b)
+    
+    print(" And "+ str(a) + " // " + str(b) + " = " + str(a/b))   
+    #only works in python2:   print" And ",a," // ",b," = ",(a/b)
     
     z = float(a)
     
-    print(" And "+ str(a) + " / " + str(b) + " = " + str(z/b))
+    print(" But in python 3 : "+ str(a) + " / " + str(b) + " = " + str(z/b))
     print(" And "+ str(a) + " // " + str(b) + " = " + str(z//b))
 
     print(" Here you can write using this format <<\"string\",interger,\"char\"...etc>> But in python3 this gives ERROR")
    
 else:
    print(" You are in Pyton 3 ")
-   answer1 = " Here division works like : {} / {} = {}"  #in python3 you can print strings and intergers using function format() like this
+   answer1 = " Here division works like : {} / {} = {}"  
+#in python3 you can print strings and intergers using function format() like this
+    
    print(answer1.format(a,b, (a/b)))
-   print(" And "+ str(a) + " // " + str(b) + " = " + str(a//b))   #Or you can use function str() to convert the intergers into strings
+   print(" And "+ str(a) + " // " + str(b) + " = " + str(a//b))  
+#Or you can use function str() to convert the intergers into strings
    print("Here you can't write using this format <<\"string\",interger,\"char\" this gives ERROR.")
  
